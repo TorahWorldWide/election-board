@@ -1,2 +1,2 @@
 # election-board
-Tomer's project board until election day (27.10.2026). Edit data.json, then ./update.sh "message".
+Data source (data.json) for the Zehut dashboard https://torahworldwide.github.io/zehut-dashboard/ . The old board page (index.html) was retired 20.10.2026 and now redirects there. Edit data.json, then ./update.sh "message".
