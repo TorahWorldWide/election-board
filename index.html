@@ -81,6 +81,7 @@ function countdown(){
 function render(){
   var g='',all=0,dn=0,wt=0;
   D.projects.forEach(function(p,i){
+    if(p.finished)return;  // finished projects live only in the dashboard's "סיימתי" group
     var T=tot(p),pc=T?Math.round(p.done.length/T*100):0;all+=T;dn+=p.done.length;wt+=p.wait.length;
     var who=p.wait.map(function(w){return w.who}).filter(function(w,j,a){return a.indexOf(w)===j});
     g+='<button class="tile" style="--c:'+p.color+'" data-i="'+i+'">'
